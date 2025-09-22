@@ -23,6 +23,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
 ?>
 <!-- HTML Form -->
 <form method="POST" action="">
+        <head><link rel="stylesheet" href="main.css"></head>
     username: <input type="text" name="username" required><br>
     Password: <input type="password" name="password" required><br>
     Email: <input type="email" name="email" required><br>

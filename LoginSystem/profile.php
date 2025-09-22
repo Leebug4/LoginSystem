@@ -20,4 +20,4 @@ $stmt->close();
 ?>
 
 <h1>Welcome, <?php echo htmlspecialchars($username); ?>!</h1>
-<p><a href="logout.php">Logout</a></p>
+<p><a href="register.php">Logout</a></p>

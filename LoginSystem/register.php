@@ -34,4 +34,5 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
         <option>Other</option>
     </select><br>
     <button type="submit">Register</button>
+        <p> need to login? click <a href="login.php">here</a> to login. </p>
 </form>

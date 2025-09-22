@@ -2,10 +2,10 @@
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
-$host = "db.pxxl.io";    // from Pxxl dashboard
-$user = "pxxluser";      // from Pxxl dashboard
-$pass = "mypassword";    // from Pxxl dashboard
-$db   = "pxxldb";        // from Pxxl dashboard
+$host = "localhost";
+$user = "root";
+$pass = "0vmarkleev0";
+$db = "usersdb";
 
 $conns = new mysqli($host, $user, $pass, $db);
 

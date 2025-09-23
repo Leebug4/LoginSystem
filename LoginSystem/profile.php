@@ -18,6 +18,10 @@ $stmt->bind_result($username);
 $stmt->fetch();
 $stmt->close();
 ?>
-    <head><link rel="stylesheet" href="main.css"></head>
-<h1>Welcome, <?php echo htmlspecialchars($username); ?>!</h1>
-<p><a href="register.php">Logout</a></p>
+
+<head><link rel="stylesheet" href="main.css"></head>
+
+<div id="profile-box">
+    <h1 id="profile-title">Welcome, <?php echo htmlspecialchars($username); ?>!</h1>
+    <a href="login.php"><button id="logout-btn">Logout</button></a>
+</div>

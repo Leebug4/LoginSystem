@@ -15,8 +15,8 @@ body {
   min-height: 100vh;
 }
 
-/* Form container */
-form {
+/* ---------- Login Page ---------- */
+#login-form {
   background: #fff;
   padding: 2rem;
   border-radius: 12px;
@@ -25,24 +25,21 @@ form {
   max-width: 400px;
 }
 
-/* Headings */
-h2, h3 {
+#login-title {
   text-align: center;
   margin-bottom: 1.5rem;
   color: #333;
 }
 
-/* Labels and inputs */
-label {
+#login-form label {
   display: block;
   margin-bottom: 0.5rem;
   font-weight: bold;
   color: #444;
 }
 
-input[type="text"],
-input[type="password"],
-input[type="email"] {
+#login-username,
+#login-password {
   width: 100%;
   padding: 10px;
   margin-bottom: 1rem;
@@ -51,13 +48,12 @@ input[type="email"] {
   transition: border 0.2s;
 }
 
-input:focus {
+#login-form input:focus {
   border-color: #007bff;
   outline: none;
 }
 
-/* Buttons */
-button {
+#login-btn {
   width: 100%;
   padding: 12px;
   background: #007bff;
@@ -69,28 +65,74 @@ button {
   transition: background 0.2s;
 }
 
-button:hover {
+#login-btn:hover {
   background: #0056b3;
 }
 
-/* Links below forms */
-p {
+#login-note {
   text-align: center;
   margin-top: 1rem;
   color: #666;
 }
 
-a {
+#login-note a {
   color: #007bff;
   text-decoration: none;
 }
 
-a:hover {
+#login-note a:hover {
   text-decoration: underline;
 }
 
-/* Profile page styling */
-.profile-box {
+/* ---------- Register Page ---------- */
+#register-form {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+#register-title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+#register-form input,
+#register-form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+#register-btn {
+  width: 100%;
+  padding: 12px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+
+#register-btn:hover {
+  background: #0056b3;
+}
+
+#register-note {
+  text-align: center;
+  margin-top: 1rem;
+  color: #666;
+}
+
+/* ---------- Profile Page ---------- */
+#profile-box {
   background: #fff;
   padding: 2rem;
   border-radius: 12px;
@@ -100,15 +142,20 @@ a:hover {
   text-align: center;
 }
 
-.profile-box h2 {
+#profile-title {
   margin-bottom: 1rem;
 }
 
-.logout-btn {
+#logout-btn {
   margin-top: 1.5rem;
   background: #dc3545;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  color: white;
+  cursor: pointer;
 }
 
-.logout-btn:hover {
+#logout-btn:hover {
   background: #a71d2a;
 }

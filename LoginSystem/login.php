@@ -26,10 +26,17 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 ?>
 
 <!-- HTML Form -->
-<form method="POST" action="">
-        <head><link rel="stylesheet" href="main.css"></head>
-    Username: <input type="text" name="username" required><br>
-    Password: <input type="password" name="password" required><br>
-    <button type="submit">Login</button>
-<p> need to registar? click <a href="register.php">here</a> to register. </p>
+<head><link rel="stylesheet" href="main.css"></head>
+
+<form id="login-form" method="POST" action="">
+    <h2 id="login-title">Login</h2>
+    <label for="login-username">Username:</label>
+    <input id="login-username" type="text" name="username" required><br>
+    
+    <label for="login-password">Password:</label>
+    <input id="login-password" type="password" name="password" required><br>
+    
+    <button id="login-btn" type="submit">Login</button>
+
+    <p id="login-note">Not yet registered? Click <a href="register.php"><i>here</i></a> to register.</p>
 </form>

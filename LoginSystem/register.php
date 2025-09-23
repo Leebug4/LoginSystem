@@ -21,19 +21,33 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     $conns->close();
 }
 ?>
+
 <!-- HTML Form -->
-<form method="POST" action="">
-        <head><link rel="stylesheet" href="main.css"></head>
-    username: <input type="text" name="username" required><br>
-    Password: <input type="password" name="password" required><br>
-    Email: <input type="email" name="email" required><br>
-    Phone: <input type="text" name="phone" required><br>
-    gender:
-    <select name ="gender">
+<head><link rel="stylesheet" href="main.css"></head>
+
+<form id="register-form" method="POST" action="">
+    <h2 id="register-title">Register</h2>
+    
+    <label for="register-username">Username:</label>
+    <input id="register-username" type="text" name="username" required><br>
+    
+    <label for="register-password">Password:</label>
+    <input id="register-password" type="password" name="password" required><br>
+    
+    <label for="register-email">Email:</label>
+    <input id="register-email" type="email" name="email" required><br>
+    
+    <label for="register-phone">Phone:</label>
+    <input id="register-phone" type="text" name="phone" required><br>
+    
+    <label for="register-gender">Gender:</label>
+    <select id="register-gender" name="gender">
         <option>Male</option>
         <option>Female</option>
         <option>Other</option>
     </select><br>
-    <button type="submit">Register</button>
-        <p> need to login? click <a href="login.php">here</a> to login. </p>
+    
+    <button id="register-btn" type="submit">Register</button>
+    
+    <p id="register-note">Need to login? Click <a href="login.php">here</a> to login.</p>
 </form>
